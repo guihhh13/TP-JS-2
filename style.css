@@ -1,0 +1,144 @@
+.cabeçalho{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background-color:black;
+    width: 100%;
+    height: 50px;
+}
+
+.newTask{
+    position: absolute;
+    top: 20%;
+    left: 90%;
+}
+
+.title{
+    position: absolute;
+    top: 20%;
+    right: 50%;
+    box-sizing: border-box;
+    height: 30px;
+    width: 40px;
+  }
+
+ .title01{
+    color:     #fff;
+    font-family: Arial;
+    font-weight: bolder;
+ }
+
+ .barra{
+    position: absolute;
+    top: 100%;
+    box-sizing: border-box;
+    border: 2px solid  green;
+    width: 100%;
+ }
+
+ .corpo{
+    display: grid;
+    grid-template-columns: 20% 5% 20% 5% 20% 5% 20%;
+    grid-template-rows:10% 90%;
+    
+ }
+
+ .toDo{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    margin-top: 15px;
+    width: 100%;
+    height: 448px;
+    
+ }
+
+ .toDo-e{
+     box-sizing: border-box;
+     width: 100%;
+     height: 40px;
+     background: black;
+     margin-top: -16px;
+     border: 1px solid gray;
+     border-left: none;
+     border-top:none;
+     border-right: none;
+ }
+ 
+ .txt{
+     color: honeydew;
+    font-family: arial;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 10px;
+ }
+
+ .inPro{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    margin-top: 15px;
+    width: 100%;
+    height: 448px;
+}
+.review{
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    margin-top: 15px;
+    width: 100%;
+    height: 448px;
+}
+
+.complete{
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    margin-top: 15px;
+    width: 100%;
+    height: 448px;
+}
+
+.NewTask-c{
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, .5);
+   z-index: 2000;
+   display: none;
+   justify-content: center;
+   align-items: center;
+}
+
+.NewTask-c.mostrar{
+   display: flex;
+
+}
+
+.NewTask-a{
+   width: 25%;
+   height: 25%;
+   padding: 15px;
+   background: white;
+   border: solid 1px #4c4d4f;
+}
+
+.description{
+   font-size: 13px;
+   font-family: arial;
+}
