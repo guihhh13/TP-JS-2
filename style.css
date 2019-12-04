@@ -142,3 +142,19 @@
    font-size: 13px;
    font-family: arial;
 }
+
+.todos{
+   border: 0.5px solid black;
+   height: 10%;
+   width: 100%;
+}
+
+.todos-nome, .todos-descricao{
+   width: 100%;
+   height: 50%;
+}
+
+.todos-p, .todos-h6{
+   padding: 0;
+   margin: 0;
+}
