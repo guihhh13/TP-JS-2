@@ -147,6 +147,9 @@
    border: 0.5px solid black;
    height: 10%;
    width: 100%;
+   border-top: none;
+   border-right: none;
+   border-left: none;
 }
 
 .todos-nome, .todos-descricao{

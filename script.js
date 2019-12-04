@@ -3,7 +3,7 @@ function iniciaModal(NewTaskId){
     modal.classList.add('mostrar');
     };
 
-function fechaModal(modalId){
+function fechaModal(modalId){ //Essa função aqui não ta funcionando né? apaga ela por favor.
     const modal = document.getElementById(NewTaskId);
     modal.classList.remove('mostrar');
 };
