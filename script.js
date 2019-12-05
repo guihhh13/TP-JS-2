@@ -46,15 +46,15 @@ function addDiv(num, nome, descricao){
     aux1 = aux1.toString();
     aux1 = aux1 + "%";
     document.querySelector('.barra1').style.width = aux1;
-    aux2 = (count2 / total)*100
+    aux2 = (count2 / total)*100;
     aux2 = aux2.toString();
     aux2 = aux2 + "%";
     document.querySelector('.barra2').style.width = aux2;
-    aux3 = (count3 / total)*100
+    aux3 = (count3 / total)*100;
     aux3 = aux3.toString();
     aux3 = aux3 + "%";
     document.querySelector('.barra3').style.width = aux3;
-    aux4 = (count4 / total)*100
+    aux4 = (count4 / total)*100;
     aux4 = aux4.toString();
     aux4 = aux4 + "%";
     document.querySelector('.barra4').style.width = aux4;
@@ -74,16 +74,19 @@ function avancar(todos){
     if(todos.parentElement.parentElement.className === 'toDo'){
         const nome = todos.childNodes[0].childNodes[0].innerText;
         const descricao = todos.childNodes[1].childNodes[0].innerText;
+        count1--;
         addDiv(1, nome, descricao);
         todos.remove();
     } else if(todos.parentElement.parentElement.className === 'inPro'){
         const nome = todos.childNodes[0].childNodes[0].innerText;
         const descricao = todos.childNodes[1].childNodes[0].innerText;
+        count2--;
         addDiv(2, nome, descricao);
         todos.remove();
     } else if(todos.parentElement.parentElement.className === 'review'){
         const nome = todos.childNodes[0].childNodes[0].innerText;
         const descricao = todos.childNodes[1].childNodes[0].innerText;
+        count3--;
         addDiv(3, nome, descricao);
         todos.remove();
     }
