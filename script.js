@@ -1,9 +1,7 @@
-var count1 = 0.0;
-var count2 = 0.0;
-var count3 = 0.0;
-var count4 = 0.0;
-var total = count1 + count2 + count3 + count4;
-total = Math.floor(total);
+var count1 = 0;
+var count2 = 0;
+var count3 = 0;
+var count4 = 0;
 
 function iniciaModal(NewTaskId){
     const modal = document.getElementById(NewTaskId);
@@ -38,35 +36,28 @@ function addDiv(num, nome, descricao){
     div.onclick = function() { avancar(div); };
     document.querySelectorAll('.todo-list')[num].appendChild(div);
     document.getElementById('NewTask-p').style.display='none';
-    if(num === 0) count1 += 1.0;
-    else if(num === 1) count2 += 1.0;
-    else if(num === 2) count3 += 1.0;
-    else if(num === 3) count4 += 1.0;
-    if(count1 !== 0){
-        aux1 = (count1 / total)*100;
-        aux1 = aux1.toString();
-        aux1 = aux1 + "%";
-        document.querySelector('.barra1').style.width = aux1;
-    }
-    if(count2 !== 0){
-        aux2 = (count2 / total)*100
-        aux2 = aux2.toString();
-        aux2 = aux2 + "%";
-        document.querySelector('.barra2').style.width = aux2;
-    }
-    if(count3 !== 0){
-        aux3 = (count3 / total)*100
-        aux3 = aux3.toString();
-        aux3 = aux3 + "%";
-        document.querySelector('.barra3').style.width = aux3;
-    }
-    if(count4 !== 0){
-        aux4 = (count4 / total)*100
-        aux4 = aux4.toString();
-        aux4 = aux4 + "%";
-        document.querySelector('.barra4').style.width = aux4;
-    }
+    if(num === 0) count1++;
+    else if(num === 1) count2++;
+    else if(num === 2) count3++;
+    else if(num === 3) count4++;
+    let total = count1 + count2 + count3 + count4;
 
+    aux1 = (count1 / total)*100;
+    aux1 = aux1.toString();
+    aux1 = aux1 + "%";
+    document.querySelector('.barra1').style.width = aux1;
+    aux2 = (count2 / total)*100
+    aux2 = aux2.toString();
+    aux2 = aux2 + "%";
+    document.querySelector('.barra2').style.width = aux2;
+    aux3 = (count3 / total)*100
+    aux3 = aux3.toString();
+    aux3 = aux3 + "%";
+    document.querySelector('.barra3').style.width = aux3;
+    aux4 = (count4 / total)*100
+    aux4 = aux4.toString();
+    aux4 = aux4 + "%";
+    document.querySelector('.barra4').style.width = aux4;
 
 }
 
